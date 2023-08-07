@@ -1,4 +1,8 @@
 import requests
+#Atividade_M3S1
+''' Para a atividade desta semana, você deverá criar um interator que irá iterar os dados da API (Application Interface) 
+da tabela FIPE e retornar os carros de uma determinada marca de veículos (essa deverá ser passada para a classe 
+que fará o papel de interator no momento da instanciação, neste caso use o ID de uma marca). '''
 
 class Modelos:#Adicionando a classe Modelos que retorna os carros de uma determinada marca de veículos da TABELA FIPE usando UMA API"
     def __init__(self, codigo: str):
