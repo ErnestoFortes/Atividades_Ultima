@@ -1,4 +1,4 @@
-
+#ATIVIDADE DA SEMANA: M3S2
 '''
 Uma pessoa do seu time de desenvolvimento está escrevendo várias funções que calculam diferentes
 formas de gerar juros. você deve escrever um decorator chamado decorator_imprimir, que será usado para a função chamada imprima os parâmetros:
@@ -14,7 +14,7 @@ def decorador_imprimir(funcao):
 
 
 @decorador_imprimir
-def juros_simples(capital, taxa, tempo):
+def juros_simples(capital, taxa, tempo):# Função que calcula o juro conforme dados de entrada: capital, taxa de juro e o tempo de amortização
     return capital * (taxa/100) * tempo
 
 
