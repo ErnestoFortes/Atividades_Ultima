@@ -9,7 +9,7 @@ class Modelos:#Adicionando a classe Modelos que retorna os carros de uma determi
         url = f'https://parallelum.com.br/fipe/api/v1/carros/marcas/{codigo}/modelos'
         response = requests.get(url)
         if response.status_code == 200:
-            data = response.json()
+            data = response.json()# cria um arquivo Json com os dados solicitados
             self.modelos = data['modelos']
             self.passo = 0
             self.tamanho = len(self.modelos)
