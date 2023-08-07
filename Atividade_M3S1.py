@@ -1,7 +1,6 @@
 import requests
 
-
-class Modelos:
+class Modelos:#Adicionando a classe Modelos que retorna os carros de uma determinada marca de veículos da TABELA FIPE usando UMA API"
     def __init__(self, codigo: str):
         url = f'https://parallelum.com.br/fipe/api/v1/carros/marcas/{codigo}/modelos'
         response = requests.get(url)
