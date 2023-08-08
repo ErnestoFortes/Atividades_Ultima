@@ -1,4 +1,4 @@
-#Atividade M3_S3
+#Atividade M3S3
 '''formula para calculo do preço com e sem desconto
 valor_com_desconto = valor_unitario * desconto * quantidade
 valor_sem_desconto = valor_unitario * quantidade
@@ -17,5 +17,5 @@ def preco_sem_e_com_desconto(valor_unitario, quantidade):
     return valor_com_desconto, valor_sem_desconto
 
 
-solicitacao = preco_sem_e_com_desconto(500,15)
+solicitacao = preco_sem_e_com_desconto(1000,90)
 print(solicitacao)
