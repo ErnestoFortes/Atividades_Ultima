@@ -3,6 +3,7 @@
 valor_com_desconto = valor_unitario * desconto * quantidade
 valor_sem_desconto = valor_unitario * quantidade
 '''
+import pytest
 
 def preco_sem_e_com_desconto(valor_unitario, quantidade):
     desconto = 1
@@ -12,10 +13,17 @@ def preco_sem_e_com_desconto(valor_unitario, quantidade):
         desconto = 0.90
     elif quantidade >= 1000:
         desconto = 0.85
+
     valor_com_desconto = valor_unitario * desconto * quantidade
     valor_sem_desconto = valor_unitario * quantidade
+
     return valor_com_desconto, valor_sem_desconto
 
 
 solicitacao = preco_sem_e_com_desconto(1000,90)
 print(solicitacao)
+
+def test_quant_entre_10_e_99():
+    valor = preco_sem_e_com_desconto(100, 15)
+    assert valor == (1425, 1500)
+
