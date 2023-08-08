@@ -27,3 +27,12 @@ def test_quant_entre_10_e_99():
     valor = preco_sem_e_com_desconto(100, 15)
     assert valor == (1425, 1500)
 
+def test_quant_entre_100_e_999():
+    valor = preco_sem_e_com_desconto(100, 110)
+    assert valor == (9900,11000)
+
+def test_quant_maior_que_999():
+    valor = preco_sem_e_com_desconto(100, 1100)
+    assert valor == (93500,110000)
+
+
