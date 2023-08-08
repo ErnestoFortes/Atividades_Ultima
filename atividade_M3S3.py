@@ -6,6 +6,11 @@ valor_sem_desconto = valor_unitario * quantidade
 import pytest
 
 def preco_sem_e_com_desconto(valor_unitario, quantidade):#função de calcula e retorna o custo com e sem desconto de um determinado produto e determinada quantidade
+    '''
+    :param valor_unitario: Valor unitário do produto
+    :param quantidade: quantidade de produtos
+    :return: retorna o resultado do valor com e sem desconto
+    '''
     desconto = 1
     if quantidade >= 10 and quantidade <= 99:
         desconto = 0.95
